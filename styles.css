@@ -1,22 +1,19 @@
-/* styles.css */
-
 #container {
     margin: 20px;
-    position: relative; /* Required for pseudo-elements */
-}
+    padding: 20px;
 
-#container::before,
-#container::after {
-    content: "Special Text"; /* Content to be inserted before and after */
-    color: #f00; /* Red color */
-    font-size: 20px;
-    position: absolute;
 }
 
 #container::before {
-    left: -100px; /* Adjust the positioning as needed */
+    content: "Before Element";
+/*     display: block; */
+    color: #f00;
+    font-size: 20px;
 }
 
 #container::after {
-    right: -100px; /* Adjust the positioning as needed */
+    content: "After Element";
+/*     display: block; */
+    color: #f00;
+    font-size: 20px;
 }
